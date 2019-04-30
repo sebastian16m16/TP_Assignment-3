@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dba5218e-ecf8-4c02-90b5-0beeac6476ea" name="Default Changelist" comment="" />
+    <list default="true" id="dba5218e-ecf8-4c02-90b5-0beeac6476ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ProductOpGUI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ProductOpGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/ClientOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/ClientOP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/ProductOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/ProductOp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/DataLayer/ClientOP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/DataLayer/ClientOP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/DataLayer/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/DataLayer/DBConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/DataLayer/OrderOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/DataLayer/OrderOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/DataLayer/ProductOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/DataLayer/ProductOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/Models/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/Models/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/Models/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/Models/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/Models/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/Models/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,11 +36,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI.form">
           <provider selected="true" editor-type-id="ui-designer" />
@@ -24,34 +48,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+            <state relative-caret-position="-299">
+              <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1203#1394#0" expanded="true" />
-                <element signature="e#1393#1394#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/ClientOP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-              <folding>
-                <element signature="method#returnClients#0;class#ClientOP#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -59,29 +60,82 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="229">
+              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#587#854#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
+                <element signature="e#961#1150#0" expanded="true" />
+                <element signature="e#1149#1150#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ProductOpGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="126" column="62" lean-forward="true" selection-start-line="126" selection-start-column="62" selection-end-line="126" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1612#2617#0" expanded="true" />
+                <element signature="e#2616#2617#0" expanded="true" />
+                <element signature="e#2665#3808#0" expanded="true" />
+                <element signature="e#3807#3808#0" expanded="true" />
+                <element signature="e#5394#6226#0" expanded="true" />
+                <element signature="e#6225#6226#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI.form">
-          <provider selected="true" editor-type-id="ui-designer" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/ClientOP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="63" column="110" lean-forward="true" selection-start-line="63" selection-start-column="110" selection-end-line="63" selection-end-column="110" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#returnClients#0;class#ClientOP#0" />
+                <element signature="method#getClientbyID#0;class#ClientOP#0" />
+                <element signature="method#addClient#0;class#ClientOP#0" />
+                <element signature="method#editClientName#0;class#ClientOP#0" />
+                <element signature="method#editClientAddress#0;class#ClientOP#0" />
+                <element signature="method#deleteClient#0;class#ClientOP#0" />
+                <element signature="method#existsClient#0;class#ClientOP#0" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/BusinessLayer/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/ProductOp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="261">
+              <caret line="97" column="42" selection-start-line="97" selection-start-column="42" selection-end-line="97" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#viewAllProducts#0;class#ProductOp#0" />
+                <element signature="method#getProductByID#0;class#ProductOp#0" />
+                <element signature="method#addProduct#0;class#ProductOp#0" />
+                <element signature="method#existsProductByName#0;class#ProductOp#0" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ProductOpGUI.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
     </leaf>
@@ -93,22 +147,40 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI.form" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI.form" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/BusinessLayer/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/DBConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/BusinessLayer/Main.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI.form" />
         <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/ClientOP.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ProductOpGUI.form" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/ProductOp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ProductOpGUI.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="assignment3" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
@@ -116,6 +188,7 @@
     <option name="width" value="1890" />
     <option name="height" value="960" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -161,6 +234,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="assignment3" type="462c0819:PsiDirectoryNode" />
+              <item name="BusinessLayer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PT2019_32711_Muresan_Sebastian_Assignment3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PT2019_32711_Muresan_Sebastian_Assignment3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment3" type="462c0819:PsiDirectoryNode" />
               <item name="DataLayer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -191,6 +273,16 @@
               <item name="PresentationLayer" type="462c0819:PsiDirectoryNode" />
               <item name="ClientOpGUI" type="e9f4de52:FormNode" />
             </path>
+            <path>
+              <item name="PT2019_32711_Muresan_Sebastian_Assignment3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PT2019_32711_Muresan_Sebastian_Assignment3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment3" type="462c0819:PsiDirectoryNode" />
+              <item name="PresentationLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="ProductOpGUI" type="e9f4de52:FormNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -198,6 +290,9 @@
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -256,13 +351,13 @@
       <window_info content_ui="combo" id="Project" order="5" weight="0.24939272" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32960895" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39851025" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -270,7 +365,7 @@
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32955465" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
@@ -285,7 +380,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24939272" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32960895" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
@@ -299,7 +394,7 @@
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32955465" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
@@ -307,16 +402,7 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/App.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -342,57 +428,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-end-column="38" />
-          <folding>
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/DBConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="8" column="72" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/ProductOp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/OrderOp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI.form">
-      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="jar://C:/Program Files/Java/java-1.8.0-openjdk-1.8.0.191-1.b12.redhat.windows.x86_64/src.zip!/java/awt/Container.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -401,20 +442,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="438">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/DBConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="72" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#587#854#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/java-1.8.0-openjdk-1.8.0.191-1.b12.redhat.windows.x86_64/src.zip!/java/sql/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4085">
+          <caret line="246" column="16" selection-start-line="246" selection-start-column="16" selection-end-line="246" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/BusinessLayer/Main.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -423,31 +483,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ProductOpGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/MenuGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        <state relative-caret-position="229">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1203#1394#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
+            <element signature="e#961#1150#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/ClientOP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        <state relative-caret-position="219">
+          <caret line="63" column="110" lean-forward="true" selection-start-line="63" selection-start-column="110" selection-end-line="63" selection-end-column="110" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#returnClients#0;class#ClientOP#0" />
+            <element signature="method#getClientbyID#0;class#ClientOP#0" />
+            <element signature="method#addClient#0;class#ClientOP#0" />
+            <element signature="method#editClientName#0;class#ClientOP#0" />
+            <element signature="method#editClientAddress#0;class#ClientOP#0" />
+            <element signature="method#deleteClient#0;class#ClientOP#0" />
+            <element signature="method#existsClient#0;class#ClientOP#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/Models/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ClientOpGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-299">
+          <caret line="73" column="15" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/DataLayer/ProductOp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="97" column="42" selection-start-line="97" selection-start-column="42" selection-end-line="97" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#viewAllProducts#0;class#ProductOp#0" />
+            <element signature="method#getProductByID#0;class#ProductOp#0" />
+            <element signature="method#addProduct#0;class#ProductOp#0" />
+            <element signature="method#existsProductByName#0;class#ProductOp#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/utcn/pt/assignment3/PresentationLayer/ProductOpGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="126" column="62" lean-forward="true" selection-start-line="126" selection-start-column="62" selection-end-line="126" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1612#2617#0" expanded="true" />
+            <element signature="e#2616#2617#0" expanded="true" />
+            <element signature="e#2665#3808#0" expanded="true" />
+            <element signature="e#3807#3808#0" expanded="true" />
+            <element signature="e#5394#6226#0" expanded="true" />
+            <element signature="e#6225#6226#0" expanded="true" />
           </folding>
         </state>
       </provider>

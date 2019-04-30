@@ -1,5 +1,7 @@
 package ro.utcn.pt.assignment3.PresentationLayer;
 
+import ro.utcn.pt.assignment3.DataLayer.ProductOp;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,6 +18,7 @@ public class MenuGUI extends JFrame{
         setTitle("Menu");
         setLocationRelativeTo(null);
 
+
         add(menuPanel);
 
         clientOperationsButton.addActionListener(new ActionListener() {
@@ -30,7 +33,9 @@ public class MenuGUI extends JFrame{
         productOperationsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                ProductOpGUI productOpGUI = new ProductOpGUI();
+                productOpGUI.setVisible(true);
+                setVisible(false);
             }
         });
 

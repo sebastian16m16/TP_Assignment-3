@@ -2,15 +2,20 @@ package ro.utcn.pt.assignment3.Models;
 
 public class Client {
 
-    public int id;
-    public String name;
-    public String address;
+    protected int id;
+    protected String name;
+    protected String address;
 
     public Client() {
     }
 
     public Client(int id, String name, String address) {
         this.id = id;
+        this.name = name;
+        this.address = address;
+    }
+
+    public Client(String name, String address) {
         this.name = name;
         this.address = address;
     }
