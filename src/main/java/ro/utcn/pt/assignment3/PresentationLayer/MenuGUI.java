@@ -18,7 +18,6 @@ public class MenuGUI extends JFrame{
         setTitle("Menu");
         setLocationRelativeTo(null);
 
-
         add(menuPanel);
 
         clientOperationsButton.addActionListener(new ActionListener() {
@@ -42,7 +41,9 @@ public class MenuGUI extends JFrame{
         productOrderButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                OrderGUI orderGUI = new OrderGUI();
+                orderGUI.setVisible(true);
+                setVisible(false);
             }
         });
     }

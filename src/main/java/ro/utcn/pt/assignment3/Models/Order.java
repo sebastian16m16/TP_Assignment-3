@@ -6,17 +6,47 @@ public class Order {
 
     public int order_id;
     public int client_id;
+    public String client_name;
     public double totalSum;
     public int product_id;
+    public String product_name;
+    public int quantity;
 
     public Order() {
     }
 
-    public Order(int order_id, int client_id, double totalSum, int product_id) {
+    public Order(int order_id, int client_id, String client_name, double totalSum, int product_id, String product_name, int quantity) {
         this.order_id = order_id;
         this.client_id = client_id;
+        this.client_name = client_name;
         this.totalSum = totalSum;
         this.product_id = product_id;
+        this.product_name = product_name;
+        this.quantity = quantity;
+    }
+
+    public String getClient_name() {
+        return client_name;
+    }
+
+    public void setClient_name(String client_name) {
+        this.client_name = client_name;
+    }
+
+    public String getProduct_name() {
+        return product_name;
+    }
+
+    public void setProduct_name(String product_name) {
+        this.product_name = product_name;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public int getOrder_id() {

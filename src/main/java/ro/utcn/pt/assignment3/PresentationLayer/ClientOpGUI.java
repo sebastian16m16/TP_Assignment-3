@@ -29,6 +29,7 @@ public class ClientOpGUI extends JFrame{
         setLocationRelativeTo(null);
 
         add(clientOpPanel);
+
         final ClientOP clientOP = new ClientOP();
         final DBConnection connection = DBConnection.getConnection();
 

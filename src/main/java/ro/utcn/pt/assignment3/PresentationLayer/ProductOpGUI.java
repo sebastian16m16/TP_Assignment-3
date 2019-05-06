@@ -21,12 +21,15 @@ public class ProductOpGUI extends JFrame{
     private JButton deleteProductButton;
     private JButton viewAllProductsButton;
     private JPanel productOpPanel;
+    private JButton backButton;
 
     public ProductOpGUI(){
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Product Operations");
         setSize(1330, 900);
         setLocationRelativeTo(null);
+        final MenuGUI menuGUI = new MenuGUI();
+
         add(productOpPanel);
 
         final DBConnection connection = DBConnection.getConnection();
@@ -58,6 +61,14 @@ public class ProductOpGUI extends JFrame{
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }
+            }
+        });
+
+        backButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                menuGUI.setVisible(true);
+                setVisible(false);
             }
         });
 

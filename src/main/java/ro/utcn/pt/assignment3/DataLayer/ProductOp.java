@@ -97,4 +97,16 @@ public class ProductOp {
         preparedStatement.setInt(1, id);
         preparedStatement.executeUpdate();
     }
+
+    public int getProductQuantityByID(Connection connection, int id) throws SQLException{
+        String stmt = "Select quantity from product where product_id = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+        preparedStatement.setInt(1, id);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        int quantity = 0;
+        while (resultSet.next()){
+            quantity = resultSet.getInt("quantity");
+        }
+        return quantity;
+    }
 }
