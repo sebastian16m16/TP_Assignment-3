@@ -6,7 +6,9 @@ import ro.utcn.pt.assignment3.DataLayer.ProductOp;
 import ro.utcn.pt.assignment3.Models.Product;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.JTableHeader;
 import javax.swing.text.DefaultEditorKit;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -24,6 +26,8 @@ public class ProductOpGUI extends JFrame{
     private JButton backButton;
 
     public ProductOpGUI(){
+
+        super();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Product Operations");
         setSize(1330, 900);
@@ -32,9 +36,13 @@ public class ProductOpGUI extends JFrame{
 
         add(productOpPanel);
 
+
+
         final DBConnection connection = DBConnection.getConnection();
         final ProductOp productOp = new ProductOp();
         final Font font = new Font("", 1, 20);
+        final Font font1 = new Font("", Font.BOLD, 15);
+
         final Object[] columns = {"ID", "Name", "Price", "Quantity"};
 
         final DefaultTableModel tableModel = new DefaultTableModel();
@@ -44,6 +52,16 @@ public class ProductOpGUI extends JFrame{
         resultsTable.setBackground(Color.cyan);
         resultsTable.setForeground(Color.black);
         resultsTable.setFont(font);
+
+        JTableHeader header = resultsTable.getTableHeader();
+        header.setBackground(Color.red);
+        header.setForeground(Color.white);
+        header.setFont(font1);
+
+        DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+        centerRenderer.setHorizontalAlignment( JLabel.CENTER );
+        resultsTable.setDefaultRenderer(Object.class, centerRenderer);
+
 
         addProductButton.addActionListener(new ActionListener() {
             @Override

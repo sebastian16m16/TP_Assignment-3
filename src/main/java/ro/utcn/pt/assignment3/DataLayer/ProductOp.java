@@ -27,6 +27,22 @@ public class ProductOp {
         return allProducts;
     }
 
+    public ArrayList<String> getAllProductsNames(Connection connection) throws SQLException{
+        ArrayList<String> allProducts = new ArrayList<>();
+
+        String stmt = "Select * from Product";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        while(resultSet.next()){
+
+            String productName = resultSet.getString("Name");
+            allProducts.add(productName);
+
+        }
+        return allProducts;
+    }
+
     public Product getProductByID(Connection connection, int product_id) throws SQLException{
 
         Product product = new Product();
@@ -44,6 +60,25 @@ public class ProductOp {
         }
 
         return product;
+    }
+
+    public Product getProductByName(Connection connection, String name) throws SQLException{
+
+        Product foundProduct = new Product();
+
+        String stmt = "Select * from product where name = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+        preparedStatement.setString(1, name);
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        while(resultSet.next()){
+            foundProduct.setName(resultSet.getString("name"));
+            foundProduct.setPrice(resultSet.getDouble("price"));
+            foundProduct.setQuantity(resultSet.getInt("quantity"));
+            foundProduct.setProduct_id(resultSet.getInt("product_id"));
+        }
+
+        return foundProduct;
     }
 
     public void addProduct(Connection connection, Product product) throws SQLException{

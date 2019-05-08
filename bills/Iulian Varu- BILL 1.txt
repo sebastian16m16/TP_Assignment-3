@@ -1,0 +1,5 @@
+Name: Iulian Varu
+Address: Str. Locomotivei grase nr.4, Baia mare
+Product: Ketchup  ..........  Price: 9.99 --- x33
+---------------
+Total Sum = 329.67

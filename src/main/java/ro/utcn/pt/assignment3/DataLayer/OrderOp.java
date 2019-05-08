@@ -2,7 +2,9 @@ package ro.utcn.pt.assignment3.DataLayer;
 
 import com.sun.org.apache.regexp.internal.RE;
 import com.sun.org.apache.xpath.internal.operations.Or;
+import ro.utcn.pt.assignment3.Models.Client;
 import ro.utcn.pt.assignment3.Models.Order;
+import ro.utcn.pt.assignment3.Models.Product;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -16,7 +18,7 @@ public class OrderOp {
 
         ArrayList<Order> allOrders= new ArrayList<>();
 
-        String stmt = "Select * from order";
+        String stmt = "Select * from productOrder";
         PreparedStatement preparedStatement = connection.prepareStatement(stmt);
         ResultSet resultSet = preparedStatement.executeQuery();
 
@@ -31,7 +33,7 @@ public class OrderOp {
     }
 
     public void editOrderQuantity(Connection connection, Order order, int newQuantity) throws SQLException{
-        String stmt = "Update order set quantity = ? where order_id = ?";
+        String stmt = "Update productOrder set quantity = ? where order_id = ?";
         PreparedStatement preparedStatement = connection.prepareStatement(stmt);
         preparedStatement.setInt(1, newQuantity);
         preparedStatement.setInt(2, order.getOrder_id());
@@ -54,7 +56,7 @@ public class OrderOp {
         preparedStatement1.setInt(2, order.getProduct_id());
         preparedStatement1.executeUpdate();
 
-        String stmt = "Delete from order where order_id = ?";
+        String stmt = "Delete from productOrder where order_id = ?";
         PreparedStatement preparedStatement = connection.prepareStatement(stmt);
         preparedStatement.setInt(1, order.getOrder_id());
         preparedStatement.executeUpdate();
@@ -64,7 +66,7 @@ public class OrderOp {
 
         Order foundOrder = new Order();
 
-        String stmt = "Select * from order where order_id = ?";
+        String stmt = "Select * from productOrder where order_id = ?";
         PreparedStatement preparedStatement = connection.prepareStatement(stmt);
         preparedStatement.setInt(1, id);
         ResultSet resultSet = preparedStatement.executeQuery();
@@ -80,6 +82,49 @@ public class OrderOp {
         }
 
         return foundOrder;
+    }
+
+    public void placeOrder(Connection connection, Product product, Client client, int quantity, double totalSum) throws SQLException{
+
+        String stmt = "INSERT INTO productOrder (product_id, product_name, client_id, client_name, quantity, totalSum) values (?, ?, ?, ?, ?, ?)";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+
+        preparedStatement.setInt(1, product.getProduct_id());
+        preparedStatement.setString(2, product.getName());
+        preparedStatement.setInt(3, client.getId());
+        preparedStatement.setString(4, client.getName());
+        preparedStatement.setInt(5, quantity);
+        preparedStatement.setDouble(6, totalSum);
+
+        preparedStatement.executeUpdate();
+
+        String stmt1 = "Update product set quantity = quantity - ? where product_id = ?";
+        PreparedStatement preparedStatement1 = connection.prepareStatement(stmt1);
+        preparedStatement1.setInt(1, quantity);
+        preparedStatement1.setInt(2, product.getProduct_id());
+        preparedStatement1.executeUpdate();
+    }
+
+    public Order getExactOrder(Connection connection, String name, String product, Double sum, int quantity)throws SQLException{
+        String stmt = "Select * from productOrder where client_name = ? and product_name = ? and totalSum = ? and quantity = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+        preparedStatement.setString(1, name);
+        preparedStatement.setString(2, product);
+        preparedStatement.setDouble(3, sum);
+        preparedStatement.setInt(4, quantity);
+
+        Order order = new Order();
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        while (resultSet.next()) {
+            order.setClient_name(resultSet.getString("client_name"));
+            order.setProduct_name(resultSet.getString("product_name"));
+            order.setTotalSum(resultSet.getDouble("totalSum"));
+            order.setQuantity(resultSet.getInt("quantity"));
+        }
+
+        return order;
     }
 
 

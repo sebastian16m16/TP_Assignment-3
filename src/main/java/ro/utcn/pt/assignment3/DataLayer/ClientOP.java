@@ -26,6 +26,21 @@ public class ClientOP {
         return foundClients;
     }
 
+    public ArrayList<String> getAllClientsName(Connection connection) throws SQLException{
+
+        ArrayList<String> foundClients = new ArrayList<>();
+
+        String stmt = "Select * from client";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        while (resultSet.next()){
+            String client = resultSet.getString("Name");
+            foundClients.add(client);
+        }
+        return foundClients;
+    }
+
     public Client getClientbyID(Connection connection, int client_id)throws SQLException{
         Client foundClient = new Client();
 

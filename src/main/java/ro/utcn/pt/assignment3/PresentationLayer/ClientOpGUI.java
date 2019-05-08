@@ -5,7 +5,9 @@ import ro.utcn.pt.assignment3.DataLayer.DBConnection;
 import ro.utcn.pt.assignment3.Models.Client;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.JTableHeader;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -22,19 +24,21 @@ public class ClientOpGUI extends JFrame{
     private JPanel clientOpPanel;
 
     ClientOpGUI(){
-
+        super();
         setTitle("Client Operations");
         setSize(1000, 700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
         add(clientOpPanel);
-
         final ClientOP clientOP = new ClientOP();
         final DBConnection connection = DBConnection.getConnection();
 
         final Font font = new Font("", 1, 20);
+        final Font font1 = new Font("", Font.BOLD, 15);
+
         final Object[] columns = {"ID", "Name", "Address"};
+
 
         final DefaultTableModel tableModel = new DefaultTableModel();
         tableModel.setColumnIdentifiers(columns);
@@ -43,6 +47,17 @@ public class ClientOpGUI extends JFrame{
         resultsTable.setBackground(Color.cyan);
         resultsTable.setForeground(Color.black);
         resultsTable.setFont(font);
+
+        JTableHeader header = resultsTable.getTableHeader();
+        header.setBackground(Color.red);
+        header.setForeground(Color.white);
+        header.setFont(font1);
+
+        DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+        centerRenderer.setHorizontalAlignment( JLabel.CENTER );
+        resultsTable.setDefaultRenderer(Object.class, centerRenderer);
+
+
 
         backButton.addActionListener(new ActionListener() {
             @Override
@@ -59,9 +74,12 @@ public class ClientOpGUI extends JFrame{
                 Client client = new Client(JOptionPane.showInputDialog(null, "Enter the name of the Client:"),
                         JOptionPane.showInputDialog(null, "Enter the address of the client: "));
 
+
                 try {
-                    clientOP.addClient(connection.connection, client);
-                    JOptionPane.showMessageDialog(null, "Client created!");
+                    if(!client.getName().equals("") || !client.getAddress().equals("")) {
+                        clientOP.addClient(connection.connection, client);
+                        JOptionPane.showMessageDialog(null, "Client created!");
+                    }
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }
@@ -104,21 +122,38 @@ public class ClientOpGUI extends JFrame{
                                 "Name");
                         if(response == "Name"){
                             Client client = clientOP.getClientbyID(connection.connection, id);
-                            clientOP.editClientName(connection.connection, client,
-                                    JOptionPane.showInputDialog(null, "Enter the new name of the client!"));
-                            JOptionPane.showMessageDialog(null, "Client's Name updated!");
+                            String newName = JOptionPane.showInputDialog(null, "Enter the new name of the client!");
+                            if(!newName.equals("")) {
+                                clientOP.editClientName(connection.connection, client, newName);
+                                JOptionPane.showMessageDialog(null, "Client's Name updated!");
+                            }
                         }else if(response == "Address"){
                             Client client = clientOP.getClientbyID(connection.connection, id);
-                            clientOP.editClientAddress(connection.connection, client, JOptionPane.showInputDialog(null,
-                                    "Enter the new Address of the client!"));
-                            JOptionPane.showMessageDialog(null, "Client's address updated!");
+                            String newAddress = JOptionPane.showInputDialog(null,"Enter the new Address of the client!");
+
+                            if(!newAddress.equals("")) {
+                                clientOP.editClientAddress(connection.connection, client, newAddress);
+
+                                JOptionPane.showMessageDialog(null, "Client's address updated!");
+                            }
                         }else {
                             Client client = clientOP.getClientbyID(connection.connection, id);
-                            clientOP.editClientName(connection.connection, client,
-                                    JOptionPane.showInputDialog(null, "Enter the new name of the client!"));
-                            clientOP.editClientAddress(connection.connection, client, JOptionPane.showInputDialog(null,
-                                    "Enter the new Address of the client!"));
-                            JOptionPane.showMessageDialog(null, "ClientS updated!");
+
+
+                            String newName = JOptionPane.showInputDialog(null, "Enter the new name of the client!");
+                            if(!newName.equals("")) {
+                                clientOP.editClientName(connection.connection, client, newName);
+                            }
+
+                            String newAddress = JOptionPane.showInputDialog(null,"Enter the new Address of the client!");
+                            if(!newAddress.equals("")) {
+                                clientOP.editClientAddress(connection.connection, client, newAddress);
+
+                            }
+                            if(!newName.equals("") && !newAddress.equals(""))
+                                JOptionPane.showMessageDialog(null, "ClientS updated!");
+                            else
+                                System.out.println("Canceled!");
                         }
                  }else
                         JOptionPane.showMessageDialog(null, "The client does not exist!");
