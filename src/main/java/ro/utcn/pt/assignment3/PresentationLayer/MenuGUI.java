@@ -6,12 +6,19 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ *  Opens the menu Frame (window)
+ * */
+
 public class MenuGUI extends JFrame{
     private JButton clientOperationsButton;
     private JButton productOperationsButton;
     private JButton productOrderButton;
     private JPanel menuPanel;
 
+    /**
+     * Constructor of the JFrame
+     * */
     public MenuGUI(){
         super();
 
@@ -21,6 +28,9 @@ public class MenuGUI extends JFrame{
         setLocationRelativeTo(null);
         add(menuPanel);
 
+        /**
+         * Button opens Client Operations window
+         * */
         clientOperationsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -36,6 +46,9 @@ public class MenuGUI extends JFrame{
             }
         });
 
+        /**
+         * Button opens Product Operation Window
+         * */
         productOperationsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -52,6 +65,10 @@ public class MenuGUI extends JFrame{
             }
         });
 
+
+        /**
+         *  Button opens the Orders Window
+         * */
         productOrderButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

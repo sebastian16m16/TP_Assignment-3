@@ -12,8 +12,16 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+/**
+ *  This Class manipulates the Data base table productOrder
+ * */
 public class OrderOp {
 
+    /**
+     *  This method returns all the orders registered in the Data Base
+     * @param connection - Data Base connection
+     * @return An arrayList of all the Orders
+     * */
     public ArrayList<Order> getAllOrders(Connection connection) throws SQLException{
 
         ArrayList<Order> allOrders= new ArrayList<>();
@@ -32,6 +40,13 @@ public class OrderOp {
         return allOrders;
     }
 
+    /**
+     *  This method edits the quantity registered in the order
+     * @param connection - Data Base connection
+     * @param order - The order that it's being edited
+     * @param newQuantity - The new quantity for the order
+     *
+     * */
     public void editOrderQuantity(Connection connection, Order order, int newQuantity) throws SQLException{
         String stmt = "Update productOrder set quantity = ? where order_id = ?";
         PreparedStatement preparedStatement = connection.prepareStatement(stmt);
@@ -48,6 +63,11 @@ public class OrderOp {
 
     }
 
+    /**
+     *  This method deletes an existing order
+     * @param connection - Data Base Connection
+     * @param order - The order to be deleted
+     * */
     public void deleteOrder(Connection connection, Order order) throws SQLException{
 
         String stmt1 = "Update product set quantity = ? where product_id = ?";
@@ -62,6 +82,12 @@ public class OrderOp {
         preparedStatement.executeUpdate();
     }
 
+    /**
+     *  Returns an order from the data Base based on the id in the table
+     * @param connection - Data Base connection
+     * @param id - The id of the order in the Data Bse
+     * @return The searched order
+     * */
     public Order getOrderByID(Connection connection, int id) throws SQLException{
 
         Order foundOrder = new Order();
@@ -84,6 +110,14 @@ public class OrderOp {
         return foundOrder;
     }
 
+    /**
+     *  This method creates an order
+     * @param connection - Data Base connection
+     * @param product - The name of the product that's being ordered
+     * @param client - The client that makes the order
+     * @param quantity - The quantity of the product that is being ordered
+     * @param totalSum - The Sum to pay for the order
+     * */
     public void placeOrder(Connection connection, Product product, Client client, int quantity, double totalSum) throws SQLException{
 
         String stmt = "INSERT INTO productOrder (product_id, product_name, client_id, client_name, quantity, totalSum) values (?, ?, ?, ?, ?, ?)";
@@ -105,6 +139,15 @@ public class OrderOp {
         preparedStatement1.executeUpdate();
     }
 
+    /**
+     *  This method gets an order based on the Client name, Product name, amount to pay and quantity
+     * @param connection - Data Base Connection
+     * @param name - The name of the client that ordered
+     * @param product - The name of the product the client ordered
+     * @param sum - The sum the client has to pay for the order
+     * @param quantity - The quantity ordered by the client
+     * @return The order that satisfies these parameters
+     * */
     public Order getExactOrder(Connection connection, String name, String product, Double sum, int quantity)throws SQLException{
         String stmt = "Select * from productOrder where client_name = ? and product_name = ? and totalSum = ? and quantity = ?";
         PreparedStatement preparedStatement = connection.prepareStatement(stmt);

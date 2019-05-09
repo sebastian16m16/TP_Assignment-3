@@ -2,7 +2,9 @@ package ro.utcn.pt.assignment3.DataLayer;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-
+/**
+ *  Creates the connection to the Data Base
+ * */
 public class DBConnection {
 
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
@@ -15,6 +17,9 @@ public class DBConnection {
 
     public static DBConnection db;
 
+    /**
+     *  Constructor creates the database connection
+     * */
     private DBConnection(){
         try{
             System.out.println("Connecting to DATABASE...\n");

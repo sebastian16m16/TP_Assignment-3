@@ -14,6 +14,10 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+/**
+ * This Class manipulates the Clients table from the Data Base
+ * */
+
 public class ClientOpGUI extends JFrame{
     private JButton addNewCLientButton;
     private JButton editClientButton;
@@ -23,6 +27,9 @@ public class ClientOpGUI extends JFrame{
     private JButton backButton;
     private JPanel clientOpPanel;
 
+    /**
+     *  The constructor creates the frame for Client Operations
+     * */
     ClientOpGUI(){
         super();
         setTitle("Client Operations");
@@ -58,7 +65,9 @@ public class ClientOpGUI extends JFrame{
         resultsTable.setDefaultRenderer(Object.class, centerRenderer);
 
 
-
+/**
+ *This button opens the previous window (in this case "Menu Window")
+ * */
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -68,6 +77,9 @@ public class ClientOpGUI extends JFrame{
             }
         });
 
+        /**
+         *Button that adds a new Client to the Data Base
+         * */
         addNewCLientButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -86,6 +98,9 @@ public class ClientOpGUI extends JFrame{
             }
         });
 
+        /**
+         *  This Button fills the JTable with the table Clients from the Data Base
+         * */
         viewAllClientsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -108,6 +123,9 @@ public class ClientOpGUI extends JFrame{
             }
         });
 
+        /**
+         *  This button edits a client based on the ID from the Data Base
+         * */
         editClientButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -163,6 +181,9 @@ public class ClientOpGUI extends JFrame{
             }
         });
 
+        /**
+         *  This button deletes the specified client (by ID) from the Data Base
+         * */
         deleteClientButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

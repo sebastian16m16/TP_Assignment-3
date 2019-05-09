@@ -20,6 +20,10 @@ import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+/**
+ *  This Class contains the interface in which the user Creates an order which is placed in the Data Base
+ * */
+
 public class PlaceOrderGUI extends JFrame {
     private JList productList;
     private JList clientList;
@@ -37,7 +41,9 @@ public class PlaceOrderGUI extends JFrame {
     int product_id = 0;
     int client_id = 0;
 
-
+    /**
+     *  The constructor creates the window in which the order is created
+     * */
     public PlaceOrderGUI() throws SQLException {
 
         super();
@@ -86,6 +92,9 @@ public class PlaceOrderGUI extends JFrame {
         clientList.setModel(clientDefaultListModel);
 
 
+        /**
+         *  Here the user selects the product that he/she wants to order
+         * */
         productList.addListSelectionListener(new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent e) {
@@ -104,6 +113,9 @@ public class PlaceOrderGUI extends JFrame {
             }
         });
 
+        /**
+         *  The user selects the registered client which will get the order
+         * */
         clientList.addListSelectionListener(new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent e) {
@@ -122,6 +134,9 @@ public class PlaceOrderGUI extends JFrame {
         });
 
 
+        /**
+         *  This button processes the textField in which the user enters the quantity desired for the order
+         * */
         enterQuantityButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -148,7 +163,9 @@ public class PlaceOrderGUI extends JFrame {
 
 
 
-
+        /**
+         *  This button checks to see if all fields are completed and after that it places the order in the Data Base
+         * */
         placeOrderButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -194,6 +211,9 @@ public class PlaceOrderGUI extends JFrame {
             }
         });
 
+        /**
+         *  This button opens the previous window (int his case "the order window")
+         * */
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -206,6 +226,15 @@ public class PlaceOrderGUI extends JFrame {
 
     }
 
+    /**
+     *  Method that creates a bill for the order
+     * @param name - The name of the client
+     * @param product - The name of the product
+     * @param address - The address of the client
+     * @param sum - The total sum for the order
+     * @param price - The price of the product
+     * @param quantity - The quantity ordered
+     * */
     private void createFile(String name, String address, String product, Double sum, Double price, int quantity){
         int nr = 1;
         File file = new File("C:\\Learning\\Java\\TehniciProgramare\\PT2019_32711_Muresan_Sebastian_Assignment3\\bills\\" + name + "- BILL " + nr + ".txt");

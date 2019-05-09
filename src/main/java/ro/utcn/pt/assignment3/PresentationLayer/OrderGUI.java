@@ -16,6 +16,10 @@ import java.io.File;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+/**
+ *  This Class contains the Order Frame where the user can manipulate the orders from the Data Base
+ * */
+
 public class OrderGUI extends JFrame{
     private JPanel orderPanel;
     private JTable resultsTable;
@@ -24,6 +28,10 @@ public class OrderGUI extends JFrame{
     private JButton deleteOrderButton;
     private JButton placeOrderButton;
     private JButton backButton;
+
+    /**
+     *  Constructor creates the frame for The Order Operations
+     * */
 
     public OrderGUI(){
         super();
@@ -70,7 +78,9 @@ public class OrderGUI extends JFrame{
 
 
 
-
+        /**
+         *  This button show all the orders that have been placed
+         * */
 
         viewAllOrdersButton.addActionListener(new ActionListener() {
             @Override
@@ -104,6 +114,9 @@ public class OrderGUI extends JFrame{
         });
 
 
+        /**
+         *  This button edits an existing order based on the ID
+         * */
         editOrderButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -135,6 +148,9 @@ public class OrderGUI extends JFrame{
             }
         });
 
+        /**
+         *  This button deletes an order based on the ID
+         * */
         deleteOrderButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -161,6 +177,9 @@ public class OrderGUI extends JFrame{
             }
         });
 
+        /**
+         *  This button opens a fratem in which the user creates an order
+         * */
         placeOrderButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -175,6 +194,9 @@ public class OrderGUI extends JFrame{
             }
         });
 
+        /**
+         *  This Button opens the previous window (in this case Menu window)
+         * */
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -184,17 +206,6 @@ public class OrderGUI extends JFrame{
             }
         });
     }
-/*
-    private void editFile(String name, String product, Double price, double sum, int quantity){
 
-        File file = new File("C:\\Learning\\Java\\TehniciProgramare\\PT2019_32711_Muresan_Sebastian_Assignment3\\bills\\" + name + "- BILL " + nr + ".txt");
-
-        if(file.exists()){
-
-        }
-
-    }
-
- */
 
 }

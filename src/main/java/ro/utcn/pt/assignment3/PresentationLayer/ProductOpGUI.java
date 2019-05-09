@@ -16,6 +16,10 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+/**
+ *  This class Opens a frame that helps the user to manipulate the products from the Data Base
+ * */
+
 public class ProductOpGUI extends JFrame{
     private JTable resultsTable;
     private JButton addProductButton;
@@ -25,6 +29,9 @@ public class ProductOpGUI extends JFrame{
     private JPanel productOpPanel;
     private JButton backButton;
 
+    /**
+     *  Constructor creates the frame
+     * */
     public ProductOpGUI(){
 
         super();
@@ -63,6 +70,9 @@ public class ProductOpGUI extends JFrame{
         resultsTable.setDefaultRenderer(Object.class, centerRenderer);
 
 
+        /**
+         *  This button adds a product to the Data Base
+         * */
         addProductButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -82,6 +92,9 @@ public class ProductOpGUI extends JFrame{
             }
         });
 
+        /**
+         *  This button opens the previous window (int this case Menu window)
+         * */
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -90,6 +103,9 @@ public class ProductOpGUI extends JFrame{
             }
         });
 
+        /**
+         *  This button edits an existing product based by the ID
+         * */
         editProductButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -138,6 +154,9 @@ public class ProductOpGUI extends JFrame{
             }
         });
 
+        /**
+         *  This Button deletes a product from the Data Base
+         * */
         deleteProductButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -162,6 +181,9 @@ public class ProductOpGUI extends JFrame{
             }
         });
 
+        /**
+         *  This button shows all the products from the Data Base to the JTable
+         * */
         viewAllProductsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
